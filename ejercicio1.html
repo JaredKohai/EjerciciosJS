@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var edad = 0;
+      while (edad <= 18) {
+        edad = prompt("Ingrese la edad:");
+        if (edad >= 18 && edad < 100) {
+          alert("Ya tienes la edad para conducir ;)");
+          break;
+        } else if (edad > 100) {
+          alert("Que raro, no deberías estar en capacidades de conducir");
+          edad = 0;
+        } else {
+          alert("No tienes la edad para conducir");
+        }
+      }
+    </script>
+  </body>
+</html>
